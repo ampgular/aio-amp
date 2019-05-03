@@ -1,0 +1,21 @@
+{
+  "openMenu": {
+    "routes": {
+      "match": [
+       "**"
+      ]
+    },
+    "whiteListed": [],
+    "plugin": "divs"
+  },
+  "canonical": {
+    "routes": {
+      "match": [
+       "**"
+      ]
+    },
+    "whiteListed": ["selected","expanded","collapsed","level-1","level-2",
+      "heading-children","heading","_ncmat-sidenav-content","initial-open","open","_ncaio-nav-item"],
+    "plugin": "canonical"
+  }
+}

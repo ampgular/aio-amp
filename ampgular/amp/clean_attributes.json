@@ -1,0 +1,29 @@
+{
+  "clean":[
+    { "tag": "div", "attr": "svgicon"},
+    { "tag": "div", "attr": "cdkscrollable"},
+    { "tag": "div", "attr": "linenums"},
+    { "tag": "div", "attr": "path"},
+    { "tag": "div", "attr": "header"},
+    { "tag": "div", "attr": "region"},
+    { "tag": "div", "attr": "mattablabelwrapper"},
+    { "tag": "div", "attr": "disableripple"},
+    { "tag": "div", "attr": "cdkmonitorelementfocus"},
+    { "tag": "div", "attr": "selector"},
+    { "tag": "div", "attr": "color"},
+    { "tag": "div", "attr": "expirationdate"},
+    { "tag": "div", "attr": "notificationid"},
+    { "tag": "button", "attr": "mat-icon-button"},
+    { "tag": "div", "attr": "layout"},
+    { "tag": "div", "attr": "layout-xs"},
+    { "tag": "div", "attr": "language"},
+    { "tag": "div", "attr": "name"},
+    { "tag": "div", "attr": "escape"},
+    { "tag": "div", "attr": "format"},
+    { "tag": "col", "attr": "width"},
+    { "tag": "a", "attr": "mat-icon-button"},
+    { "tag": "a", "attr": "mat-button"},
+    { "tag": "div", "attr": "hidecopy"},
+    { "tag": "div", "attr": "mode"}
+  ]
+}

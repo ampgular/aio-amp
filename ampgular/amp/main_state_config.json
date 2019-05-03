@@ -1,0 +1,28 @@
+{
+  "$schema": "../node_modules/@ampgular/cli/shemas/state-definition.json",
+  "menuOpen": {
+      "routes": {
+        "match": [
+          "**"
+        ]
+      },
+      "events": [
+        {
+          "id": "[id='hamburger']",
+          "event": "tap"
+        }
+      ],
+      "css": [
+        {
+          "id": "[id='sidenav']",
+          "class": "open"
+        },
+        {
+          "id": "._ncmat-sidenav-content",
+          "class": "open"
+        }
+
+      ]
+    }
+  }
+

@@ -1,0 +1,84 @@
+{
+  "$schema": "../node_modules/@ampgular/cli/lib/config/schema.json",
+  "version": 1,
+  "target": "browser",
+  "host": "https://ampgular.com",
+  "amp": {
+    "ampValidation": true,
+    "cssOptimize": true,
+    "serviceWorker": true,
+    "stateFiles": [
+      "/ampgular/amp/main_state_config.json"
+    ],
+    "dynamicFiles": [
+      "/ampgular/amp/main_dynamic_config.json"
+    ],
+    "pluginsFiles": [
+      "/ampgular/amp/plugins_config.json"
+    ],
+    "mode": "render",
+    "prerender": false
+  },
+  "buildConfig": {
+    "configuration": "production",
+    "build": false
+  },
+  "renderConfig": {
+    "node": {
+      "webpack": false,
+      "localhost": false
+    },
+    "browser": {
+      "port": "4000"
+    }
+  },
+  "deploy": {
+    "targetApp": "prerender",
+    "amp": false,
+    "sitemap": true,
+    "robots": true,
+    "files": [
+      {
+        "from": "/src/_fonts.scss",
+        "to": "public"
+      }
+    ]
+  },
+  "prerender": {
+    "cssOptimize": false,
+    "namedFiles": false
+  },
+  "spider": {
+    "entryPaths": [
+      "/"
+    ],
+    "excludePaths": [
+      "/api/**",
+      "/generated/**",
+      "/assets/**"
+    ],
+    "includePaths": [
+      ""
+    ],
+    "ensureCanonical": false,
+    "excludeQuery": true,
+    "dryRun": false
+  },
+  "sitemap": {
+    "defaultPriority": 0.8,
+    "defaultFrecuency": "weekly",
+    "custom": [
+      {
+        "urls": [
+          "/es/nuilea-day-spa",
+          "/de/wellness-nuilea-day-spa",
+          "/en/wellness-nuilea-day-spa",
+          "/fr/bien-etre-nuilea-day-spa",
+          "**/last-minute*"
+        ],
+        "frecuency": "daily",
+        "priority": 1
+      }
+    ]
+  }
+}
